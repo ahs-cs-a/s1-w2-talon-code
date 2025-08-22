@@ -11,6 +11,11 @@ public class BodyOfWater{
         isSaltWater = salt;
     }
 
+    public BodyOfWater(String n, double depth){
+        name = n;
+        avgDepth = depth;
+    }
+
     public void setName(String n){
         name = n;
     }
@@ -19,12 +24,19 @@ public class BodyOfWater{
         largestDiameter = diameter;
     }
 
-      public void setavgDepth(String depth){
+    public void setavgDepth(double depth){
         avgDepth = depth;
     }
 
-    public void setisSaltWater(int salt){
+    public void setisSaltWater(boolean salt){
         isSaltWater = salt;
+    }
+
+    public void printState(){
+        System.out.println(name);
+        System.out.println(largestDiameter);
+        System.out.println(avgDepth);
+        System.out.println(isSaltWater);
     }
 
 }
