@@ -39,5 +39,5 @@ public class Animal {
 
     public boolean limbs(){
         return numLimbs;
-    }
+    } //
 }
